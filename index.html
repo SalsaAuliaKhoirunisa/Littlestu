@@ -229,7 +229,7 @@
               tampil manis.
             </p>
             <div class="hero-actions">
-              <a href="#featured" class="btn btn-primary">Lihat Koleksi</a>
+              <a href="#categories" class="btn btn-primary">Lihat Koleksi</a>
               <a
                 href="#"
                 class="btn btn-ghost"
@@ -431,52 +431,87 @@
       </section>
 
       <!-- ============ FEATURED COLLECTION ============ -->
-      <section class="featured" id="featured" aria-label="Koleksi pilihan">
-        <div class="section-head">
-          <h2>Featured Collection</h2>
-        </div>
-        <div class="featured-grid">
-          <a href="#" class="featured-card featured-card--large reveal">
-            <img
-              src="jiwoo.jpeg"
-              alt="Koleksi pakaian anak perempuan LITTLESTU"
-              loading="lazy"
-              width="900"
-              height="1000"
-            />
-            <span class="featured-overlay">
-              <span class="featured-name">Girls Collection</span>
-              <span class="btn btn-light">Lihat Koleksi</span>
-            </span>
-          </a>
-          <a href="#" class="featured-card reveal">
-            <img
-              src="https://placehold.co/700x480/e4d8c7/3e2f23?text=Boys+Collection"
-              alt="Koleksi pakaian anak laki-laki LITTLESTU"
-              loading="lazy"
-              width="700"
-              height="480"
-            />
-            <span class="featured-overlay">
-              <span class="featured-name">Boys Collection</span>
-              <span class="btn btn-light">Lihat Koleksi</span>
-            </span>
-          </a>
-          <a href="#new-arrivals" class="featured-card reveal">
-            <img
-              src="zula.jpeg"
-              alt="Koleksi terbaru LITTLESTU"
-              loading="lazy"
-              width="700"
-              height="480"
-            />
-            <span class="featured-overlay">
-              <span class="featured-name">New Arrivals</span>
-              <span class="btn btn-light">Lihat Koleksi</span>
-            </span>
-          </a>
-        </div>
-      </section>
+      <section class="featured" id="collection">
+  <div class="featured-grid">
+
+    <!-- Satu kotak carousel -->
+    <div class="featured-slider" id="featuredSlider">
+
+      <!-- Tempat semua slide -->
+      <div class="featured-track">
+
+        <!-- Foto pertama -->
+        <a href="#new-arrivals" class="featured-slide">
+          <img
+            src="zula.jpeg"
+            alt="Koleksi Zula tops"
+          />
+
+          <div class="featured-content">
+            <p>Koleksi Pilihan</p>
+            <h2>Zula Tops</h2>
+            <span>Lihat Koleksi</span>
+          </div>
+        </a>
+
+        <!-- Foto kedua -->
+        <a href="#new-arrivals" class="featured-slide">
+          <img
+            src="jiwoo.jpeg"
+            alt="Koleksi Jiwoo Shirt"
+          />
+
+          <div class="featured-content">
+            <p>Koleksi Terbaru</p>
+            <h2>Jiwoo Shirt</h2>
+            <span>Lihat Koleksi</span>
+          </div>
+        </a>
+
+        <!-- Foto ketiga -->
+        <a href="#new-arrivals" class="featured-slide">
+          <img
+            src="haenim.jpeg"
+            alt="Koleksi Haenim Jeans"
+          />
+
+          <div class="featured-content">
+            <p>Favorit Si Kecil</p>
+            <h2>Haenim Jeans</h2>
+            <span>Lihat Koleksi</span>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- Tombol kiri dan kanan -->
+      <button
+        type="button"
+        class="featured-arrow featured-arrow--prev"
+        aria-label="Foto sebelumnya"
+      >
+        ‹
+      </button>
+
+      <button
+        type="button"
+        class="featured-arrow featured-arrow--next"
+        aria-label="Foto berikutnya"
+      >
+        ›
+      </button>
+
+      <!-- Bulatan indikator -->
+      <div class="featured-dots">
+        <button class="active" aria-label="Slide 1"></button>
+        <button aria-label="Slide 2"></button>
+        <button aria-label="Slide 3"></button>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
       <!-- ============ PROMO BANNER ============ -->
       <section class="promo reveal" aria-label="Promo spesial">
@@ -500,7 +535,7 @@
           <!-- Product cards injected/duplicated by script.js from data, but static markup kept for no-JS baseline -->
           <article
             class="product-card"
-            data-category="girls tops"
+            data-category="girls setelan"
             data-name="Alicia Set"
           >
             <div class="product-media">
@@ -534,7 +569,7 @@
             </div>
             <div class="product-info">
               <h3>Alicia Set</h3>
-              <p class="product-price">Rp149.000</p>
+              <p class="product-price">Rp108.000 - Rp138.000</p>
 <div
   class="color-dots"
   role="group"
@@ -548,12 +583,22 @@
   ></span>
 </div>
 
-<a href="#" class="btn btn-outline btn-sm">Lihat Detail</a>
+<a href="#" class="btn btn-outline btn-sm js-product-detail"
+  data-name="Alicia Set"
+  data-price="Rp108.000 - Rp138.000"
+  data-images="alicia2.jpeg, alicia3.jpeg, alicia4.jpeg"
+  data-colors="Abu-abu:#b8b8b8"
+  data-size="Tersedia dalam ukuran S–4L"
+  data-desc="Setelan atasan rajut dan rok lipit warna abu-abu, lembut di kulit dan nyaman dipakai untuk aktivitas harian si kecil."
+  data-shopee="https://shopee.co.id/LITTLESTU-SETELAN-ROK-ANAK-PEREMPUAN-ALICIA-SET-i.7430022.29589084734?extraParams=%7B%22display_model_id%22%3A118718381030%2C%22model_selection_logic%22%3A3%7D"
+  data-tiktok="https://www.tiktok.com/@littlestu.kidswear"
+>Lihat Detail</a>
+            </div>
           </article>
 
           <article
             class="product-card"
-            data-category="girls dress"
+            data-category="girls tops"
             data-name="Jiwoo Shirt"
           >
             <div class="product-media">
@@ -587,7 +632,7 @@
             </div>
             <div class="product-info">
               <h3>Jiwoo Shirt</h3>
-              <p class="product-price">Rp229.000</p>
+              <p class="product-price">Rp68.000 - Rp98.000</p>
               <div
                 class="color-dots"
                 role="group"
@@ -607,13 +652,22 @@
   aria-label="Pink"
 ></span>
               </div>
-              <a href="#" class="btn btn-outline btn-sm">Lihat Detail</a>
+              <a href="#" class="btn btn-outline btn-sm js-product-detail"
+                data-name="Jiwoo Shirt"
+                data-price="Rp68.000 - Rp98.000"
+                data-images="jiwoo.jpeg"
+                data-colors="Biru:#86b6d8,Pink:#e8a7b8"
+                data-size="Tersedia dalam ukuran S–4L"
+                data-desc="Kemeja anak dengan potongan santai dan bahan katun sejuk, cocok dipadukan untuk gaya kasual maupun semi-formal."
+                data-shopee="https://shopee.co.id/LITTLE-STU-kemeja-anak-perempuan-laki-laki-JIWOO-SHIRT-i.7430022.49812956481?extraParams=%7B%22display_model_id%22%3A446121079998%2C%22model_selection_logic%22%3A3%7D"
+                data-tiktok="https://www.tiktok.com/@littlestu.kidswear"
+              >Lihat Detail</a>
             </div>
           </article>
 
           <article
             class="product-card"
-            data-category="boys bottoms"
+            data-category="girls bottoms"
             data-name="haenim jeans"
           >
             <div class="product-media">
@@ -646,23 +700,41 @@
               </button>
             </div>
             <div class="product-info">
-              <h3>Haenim Jeans</h3>
-              <p class="product-price">Rp179.000</p>
-              <div
-                class="color-dots"
-                role="group"
-                aria-label="Pilihan warna Haenim Jeans"
+            <h3>Haenim Jeans</h3>
+
+            <p class="product-price">Rp98.000 - Rp118.000</p>
+
+            <div
+              class="color-dots"
+              role="group"
+              aria-label="Pilihan warna Light Jeans"
               >
-                <span class="dot" style="--dot: #4a5568" title="Denim"></span>
-                <span class="dot" style="--dot: #1a1613" title="Hitam"></span>
-              </div>
-              <a href="#" class="btn btn-outline btn-sm">Lihat Detail</a>
-            </div>
+    <span
+      class="dot"
+      style="--dot: #9bb8cf"
+      title="Light Blue Denim"
+      aria-label="Light Blue Denim"
+    ></span>
+  </div>
+
+  <a href="#" class="btn btn-outline btn-sm js-product-detail"
+    data-name="Light Jeans"
+    data-price="Rp98.000 - Rp118.000"
+    data-images="haenim.jpeg, haenim3.jpeg, haenim4.jpeg"
+    data-colors="Light Blue Denim:#9bb8cf"
+    data-size="Tersedia dalam ukuran S–4L"
+    data-desc="Celana denim ringan dengan warna biru muda, nyaman dipakai bermain seharian tanpa terasa panas."
+    data-shopee="https://shopee.co.id/LITTLESTU-JEANS-ANAK-UNISEX-HAENIM-JEANS-i.7430022.57614022245?extraParams=%7B%22display_model_id%22%3A426210764849%2C%22model_selection_logic%22%3A3%7D"
+    data-tiktok="https://www.tiktok.com/@littlestu.kidswear"
+  >
+    Lihat Detail
+  </a>
+</div>
           </article>
 
           <article
             class="product-card"
-            data-category="boys setelan"
+            data-category="girls setelan"
             data-name="naeil jumpsuit"
           >
             <div class="product-media">
@@ -696,28 +768,36 @@
             </div>
             <div class="product-info">
               <h3>Naeil Jumpsuit</h3>
-              <p class="product-price">Rp199.000</p>
+              <p class="product-price">Rp98.000 - Rp128.000</p>
               <div
                 class="color-dots"
                 role="group"
                 aria-label="Pilihan warna Naeil Jumpsuit"
               >
-                <span class="dot" style="--dot: #efe4d3" title="Beige"></span>
-                <span class="dot" style="--dot: #c4a585" title="Tan"></span>
+                <span class="dot" style="--dot: #2f4154" title="Blue denim"></span>
               </div>
-              <a href="#" class="btn btn-outline btn-sm">Lihat Detail</a>
+              <a href="#" class="btn btn-outline btn-sm js-product-detail"
+                data-name="Naeil Jumpsuit"
+                data-price="Rp98.000 - Rp128.000"
+                data-images="naeil.jpeg"
+                data-colors="Blue Denim:#2f4154"
+                data-size="Tersedia dalam ukuran S–4L"
+                data-desc="Jumpsuit denim dengan tali silang, praktis dipakai dan memberi tampilan playful untuk si kecil."
+                data-shopee="https://shopee.co.id/LITTLESTU-Baju-Kodok-OverAll-NAEIL-OVERALL-i.7430022.29512327425?extraParams=%7B%22display_model_id%22%3A99811524139%2C%22model_selection_logic%22%3A3%7D"
+                data-tiktok="https://www.tiktok.com/@littlestu.kidswear"
+              >Lihat Detail</a>
             </div>
           </article>
 
           <article
             class="product-card"
-            data-category="girls dress"
-            data-name="santha dress"
+            data-category="girls setelan"
+            data-name="sevvy set"
           >
             <div class="product-media">
               <img
                 src="sevvy.jpeg"
-                alt="sevvy set"
+                alt="Sevvy Set warna hijau dan merah bata"
                 loading="lazy"
                 width="500"
                 height="620"
@@ -745,31 +825,35 @@
             </div>
             <div class="product-info">
               <h3>Sevvy Set</h3>
-              <p class="product-price">Rp259.000</p>
+              <p class="product-price">Rp158.000</p>
               <div
                 class="color-dots"
                 role="group"
                 aria-label="Pilihan warna Sevvy Set"
               >
-                <span
-                  class="dot"
-                  style="--dot: #fffcf7"
-                  title="Putih Tulang"
-                ></span>
-                <span class="dot" style="--dot: #c4a585" title="Tan"></span>
+                <span class="dot" style="--dot: #8BCF72"" title="Green"></span>
                 <span
                   class="dot"
                   style="--dot: #8b2e2e"
                   title="Merah Bata"
                 ></span>
               </div>
-              <a href="#" class="btn btn-outline btn-sm">Lihat Detail</a>
+              <a href="#" class="btn btn-outline btn-sm js-product-detail"
+                data-name="Sevvy Set"
+                data-price="Rp158.000"
+                data-images="sevvy.jpeg"
+                data-colors="Green:#8BCF72,Merah Bata:#8b2e2e"
+                data-size="Tersedia dalam ukuran S–4L"
+                data-desc="Setelan dua warna yang segar dan playful, terbuat dari bahan yang ringan dan mudah bergerak."
+                data-shopee="https://shopee.co.id/LITTLESTU-SETELAN-ANAK-PEREMPUAN-SEVVY-SET-i.7430022.29442486519?extraParams=%7B%22display_model_id%22%3A286833981987%2C%22model_selection_logic%22%3A3%7D"
+                data-tiktok="https://www.tiktok.com/@littlestu.kidswear"
+              >Lihat Detail</a>
             </div>
           </article>
 
           <article
             class="product-card"
-            data-category="boys bottoms"
+            data-category="girls bottoms"
             data-name="uni trousers"
           >
             <div class="product-media">
@@ -803,18 +887,256 @@
             </div>
             <div class="product-info">
               <h3>Uni Trousers</h3>
-              <p class="product-price">Rp169.000</p>
+              <p class="product-price">Rp78.000 - Rp98.000</p>
               <div
                 class="color-dots"
                 role="group"
                 aria-label="Pilihan warna Uni Trousers"
               >
-                <span class="dot" style="--dot: #c4a585" title="Tan"></span>
                 <span class="dot" style="--dot: #1a1613" title="Hitam"></span>
               </div>
-              <a href="#" class="btn btn-outline btn-sm">Lihat Detail</a>
+              <a href="#" class="btn btn-outline btn-sm js-product-detail"
+                data-name="Uni Trousers"
+                data-price="Rp78.000 - Rp98.000"
+                data-images="uni.jpeg"
+                data-colors="Hitam:#1a1613"
+                data-size="Tersedia dalam ukuran S–5L"
+                data-desc="Celana panjang dasar dengan potongan lurus, mudah dipadukan dengan atasan apa pun di lemari si kecil."
+                data-shopee="https://shopee.co.id/LITTLESTU-CELANA-ANAK-PEREMPUAN-UNI-TROUSERS-i.7430022.50916179288?extraParams=%7B%22display_model_id%22%3A381379899849%2C%22model_selection_logic%22%3A3%7D"
+                data-tiktok="https://www.tiktok.com/@littlestu.kidswear"
+              >Lihat Detail</a>
             </div>
           </article>
+
+                    <article
+            class="product-card"
+            data-category="boys bottoms, girls bottoms"
+            data-name="Kania Jeans"
+          >
+            <div class="product-media">
+              <img
+                src="kania.jpeg"
+                alt="Kania Jeans warna denim"
+                loading="lazy"
+                width="500"
+                height="620"
+              />
+              <button
+                class="fav-btn"
+                aria-label="Tambahkan Kania Jeans ke favorit"
+                aria-pressed="false"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 20.5s-7.5-4.6-10-9.4C.5 7.6 2.4 4 6 4c2.1 0 3.6 1.1 4.5 2.3l1.5 2 1.5-2C14.4 5.1 15.9 4 18 4c3.6 0 5.5 3.6 4 7.1-2.5 4.8-10 9.4-10 9.4Z"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="product-info">
+              <h3>Kania Jeans</h3>
+              <p class="product-price">Rp108.000 - Rp138.000</p>
+              <div
+                class="color-dots"
+                role="group"
+                aria-label="Pilihan warna Kania Jeans"
+              >
+                <span class="dot" style="--dot: #1a1613" title="Denim"></span>
+              </div>
+              <a href="#" class="btn btn-outline btn-sm js-product-detail"
+                data-name="Kania Jeans"
+                data-price="Rp108.000 - Rp138.000"
+                data-images="kania.jpeg, kania2.jpeg, kania3.jpeg"
+                data-colors="Denim:#1a1613"
+                data-size="Tersedia dalam ukuran S–4L"
+                data-desc="Celana panjang dasar dengan potongan lurus, mudah dipadukan dengan atasan apa pun di lemari si kecil."
+                data-shopee="https://shopee.co.id/LITTLESTU-CELANA-JEANS-ANAK-KANIA-JEANS-i.7430022.54809542702?extraParams=%7B%22display_model_id%22%3A320843611874%2C%22model_selection_logic%22%3A3%7D"
+                data-tiktok="https://www.tiktok.com/@littlestu.kidswear"
+              >Lihat Detail</a>
+            </div>
+          </article>
+
+          <article
+            class="product-card"
+            data-category="girls bottoms"
+            data-name="grey skort"
+          >
+            <div class="product-media">
+              <img
+                src="grey.jpeg"
+                alt="Grey Skort warna abu-abu"
+                loading="lazy"
+                width="500"
+                height="620"
+              />
+              <button
+                class="fav-btn"
+                aria-label="Tambahkan Grey Skort ke favorit"
+                aria-pressed="false"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 20.5s-7.5-4.6-10-9.4C.5 7.6 2.4 4 6 4c2.1 0 3.6 1.1 4.5 2.3l1.5 2 1.5-2C14.4 5.1 15.9 4 18 4c3.6 0 5.5 3.6 4 7.1-2.5 4.8-10 9.4-10 9.4Z"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="product-info">
+              <h3>Grey Skort</h3>
+              <p class="product-price">Rp94.000</p>
+              <div
+                class="color-dots"
+                role="group"
+                aria-label="Pilihan warna Grey Skort"
+              >
+                <span class="dot" style="--dot: #cccccc" title="Abu-abu"></span>
+              </div>
+              <a href="#" class="btn btn-outline btn-sm js-product-detail"
+                data-name="Grey Skort"
+                data-price="Rp94.000"
+                data-images="grey.jpeg, grey2.jpeg"
+                data-colors="Abu-abu:#cccccc"
+                data-size="Tersedia dalam ukuran S–4L"
+                data-desc="Celana panjang dasar dengan potongan lurus, mudah dipadukan dengan atasan apa pun di lemari si kecil."
+                data-shopee="https://shopee.co.id/LITTLESTU-ROK-ANAK-PEREMPUAN-GREY-SKORT-i.7430022.51109550280?extraParams=%7B%22display_model_id%22%3A307572439981%2C%22model_selection_logic%22%3A3%7D"
+                data-tiktok="https://www.tiktok.com/@littlestu.kidswear"
+              >Lihat Detail</a>
+            </div>
+          </article>
+
+          <article
+            class="product-card"
+            data-category="girls tops"
+            data-name="Clarisa Top"
+          >
+            <div class="product-media">
+              <img
+                src="clarisa.jpeg"
+                alt="Clarisa Top warna hitam"
+                loading="lazy"
+                width="500"
+                height="620"
+              />
+              <button
+                class="fav-btn"
+                aria-label="Tambahkan Clarisa Top ke favorit"
+                aria-pressed="false"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 20.5s-7.5-4.6-10-9.4C.5 7.6 2.4 4 6 4c2.1 0 3.6 1.1 4.5 2.3l1.5 2 1.5-2C14.4 5.1 15.9 4 18 4c3.6 0 5.5 3.6 4 7.1-2.5 4.8-10 9.4-10 9.4Z"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="product-info">
+              <h3>Clarisa Top</h3>
+              <p class="product-price">Rp169.000</p>
+              <div
+                class="color-dots"
+                role="group"
+                aria-label="Pilihan warna Clarisa Top"
+              >
+                <span class="dot" style="--dot: #1a1613" title="Hitam"></span>
+              </div>
+              <a href="#" class="btn btn-outline btn-sm js-product-detail"
+                data-name="Clarisa Top"
+                data-price="Rp169.000"
+                data-images="clarisa.jpeg, clarisa 1.jpeg, clarisa2.jpeg"
+                data-colors="Hitam:#1a1613"
+                data-size="Tersedia dalam ukuran S–4L"
+                data-desc="Atasan anak perempuan dengan potongan santai, nyaman dipakai untuk bermain maupun acara keluarga."
+                data-shopee="https://shopee.co.id/LITTLESTU-Atasan-Anak-Perempuan-Clarisa-Top-i.7430022.29945076761?extraParams=%7B%22display_model_id%22%3A311084386921%2C%22model_selection_logic%22%3A3%7D"
+                data-tiktok="https://www.tiktok.com/@littlestu.kidswear"
+              >Lihat Detail</a>
+            </div>
+          </article>
+
+          <article
+            class="product-card"
+            data-category="girls tops"
+            data-name="HB Shirt"
+          >
+            <div class="product-media">
+              <img
+                src="hbshirt.jpeg"
+                alt="HB Shirt warna hitam"
+                loading="lazy"
+                width="500"
+                height="620"
+              />
+              <button
+                class="fav-btn"
+                aria-label="Tambahkan HB Shirt ke favorit"
+                aria-pressed="false"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 20.5s-7.5-4.6-10-9.4C.5 7.6 2.4 4 6 4c2.1 0 3.6 1.1 4.5 2.3l1.5 2 1.5-2C14.4 5.1 15.9 4 18 4c3.6 0 5.5 3.6 4 7.1-2.5 4.8-10 9.4-10 9.4Z"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="product-info">
+              <h3>HB Shirt</h3>
+              <p class="product-price">Rp68.000 - Rp108.000</p>
+              <div
+                class="color-dots"
+                role="group"
+                aria-label="Pilihan warna HB Shirt"
+              >
+                <span class="dot" style="--dot: #1a1613" title="Hitam"></span>
+                <span class="dot" style="--dot: #ffffff" title="Putih"></span>
+              </div>
+              <a href="#" class="btn btn-outline btn-sm js-product-detail"
+                data-name="HB Shirt"
+                data-price="Rp98.000 - Rp108.000"
+                data-images="hbshirt.jpeg, hbshirt2.jpeg"
+                data-colors="Hitam:#1a1613,Putih:#ffffff,"
+                data-size="Tersedia dalam ukuran S–4L"
+                data-desc="Atasan anak perempuan dengan potongan santai, nyaman dipakai untuk bermain maupun acara keluarga."
+                data-shopee="http://shopee.co.id/LITTLESTU-Kemeja-Anak-Perempuan-HB-Shirt-i.7430022.45207279299?extraParams=%7B%22display_model_id%22%3A320646414606%2C%22model_selection_logic%22%3A3%7D"
+                data-tiktok="https://www.tiktok.com/@littlestu.kidswear"
+              >Lihat Detail</a>
+            </div>
+          </article>
+          
         </div>
 
         <p class="no-results" id="noResults" hidden>
@@ -1057,6 +1379,78 @@
 
     <!-- Toast -->
     <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+    <!-- ============ PRODUCT DETAIL MODAL (bottom sheet) ============ -->
+    <div class="product-modal-overlay" id="productModalOverlay" hidden></div>
+    <div
+      class="product-modal"
+      id="productModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="productModalTitle"
+      aria-hidden="true"
+      hidden
+    >
+      <div class="product-modal-sheet">
+        <button
+          type="button"
+          class="product-modal-close"
+          id="productModalClose"
+          aria-label="Tutup detail produk"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <line x1="5" y1="5" x2="19" y2="19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+            <line x1="19" y1="5" x2="5" y2="19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          </svg>
+        </button>
+
+        <div class="product-modal-slider" id="productModalSlider">
+          <div class="product-modal-track" id="productModalTrack">
+            <!-- slide <img> elements injected by script.js -->
+          </div>
+
+          <button type="button" class="slider-arrow slider-arrow--prev" id="sliderPrev" aria-label="Foto sebelumnya">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M14.5 5 8 12l6.5 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <button type="button" class="slider-arrow slider-arrow--next" id="sliderNext" aria-label="Foto berikutnya">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M9.5 5 16 12l-6.5 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+
+          <div class="slider-dots" id="sliderDots" role="tablist" aria-label="Pilih foto produk"></div>
+        </div>
+
+        <div class="product-modal-body">
+          <h2 class="product-modal-title" id="productModalTitle"></h2>
+          <p class="product-modal-price" id="productModalPrice"></p>
+
+          <div class="product-modal-colors" id="productModalColors" role="group" aria-label="Warna tersedia"></div>
+
+          <p class="product-modal-size" id="productModalSize"></p>
+          <p class="product-modal-desc" id="productModalDesc"></p>
+
+          <div class="product-modal-actions">
+            <a
+              href="#"
+              class="btn btn-primary"
+              id="productModalShopee"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Beli di Shopee</a>
+            <a
+              href="#"
+              class="btn btn-outline"
+              id="productModalTiktok"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Beli di TikTok Shop</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
